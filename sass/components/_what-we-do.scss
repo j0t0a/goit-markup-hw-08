@@ -1,0 +1,8 @@
+.what-we-do{
+    display: none;
+}
+@media (min-width: 1200px){
+    .what-we-do{
+        display: flex;
+    }
+}

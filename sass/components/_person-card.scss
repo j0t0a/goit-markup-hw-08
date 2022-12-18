@@ -1,0 +1,65 @@
+.our-team{
+    background-color: var(--dark-white);
+    padding-bottom: 30px;
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+.person-card{
+    display: inline-block;
+    width: 450px;
+    background: var(--white);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    padding-bottom: 24px;
+    margin-bottom: 30px;
+    &__info{
+        padding: 30px 24px 16px;
+        line-height: 18.75px;
+    }
+    &__name{
+        font-family: inherit;
+        font-weight: 500;
+        font-size: 16px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-top: 0;
+        color: var(--dark-title);
+        margin-bottom: 10px;
+    }
+    &__position{
+        font-family: inherit;
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--grey);
+        margin: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .person-card{
+        width: 354px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .our-team{
+        padding-bottom: 60px;
+    }
+    .person-card{
+        width: 270px;
+        padding-bottom: 30px;
+        margin: 0;
+        &__info{
+            padding: 20px 24px;
+            line-height: 36px;
+        }
+        &__name{
+            margin-bottom: 4px;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.person-socials{
+    display: flex;
+    justify-content: center;
+    &__item{
+        &:not(:last-child){
+            margin-right: 10px;
+        }
+    }
+    &__link{
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover, &:focus{
+            background-color: var(--blue-color);
+            .person-socials__icon{
+                fill: var(--white);
+            }
+        }
+    }
+    &__icon{
+        fill: var(--icon-grey);
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+@media (min-width: 768px) {
+    .person-socials{
+
+    }
+}
+
+@media (min-width: 1200px) {
+    .person-socials{
+        // padding: 0 32px;
+
+    }
+}

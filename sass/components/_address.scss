@@ -1,0 +1,42 @@
+.address{
+    margin-top: 20px;
+    width: 100%;
+    &__list{
+        list-style-type:none;
+        font-style: normal;
+        margin: 0;
+        text-align: center;
+    }
+    &__item{
+        &:not(:last-child){
+            margin-bottom: 10px;
+        }
+    }
+    &__link{
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: none;
+        font-family: inherit;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover{
+            color: var(--blue-color);
+        }
+    }
+    &__link--light{
+        color: var(--white);
+    }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1200px) {
+    .address{
+        &__list{
+            text-align: left;
+        }
+    }
+}

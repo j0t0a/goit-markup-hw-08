@@ -1,0 +1,28 @@
+.portfolio{
+    padding-bottom: 30px;
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0;
+    }
+    &__item{
+        width: 450px;
+    }
+}
+
+@media (min-width: 768px) {
+    .portfolio{
+        &__item{
+            width: 354px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .portfolio{
+        &__item{
+            width: calc((100% - 60px) / 3);
+        }
+    }
+}
