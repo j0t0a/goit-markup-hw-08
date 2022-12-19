@@ -30,7 +30,6 @@
         font-weight: 900;
         font-size: 26px;
         text-align: center;
-        width: 360px;
         letter-spacing: 0.06em;
         line-height: 42px;
     }
@@ -61,6 +60,14 @@
   (min-resolution: 2dppx) {
     .order{
         background-image: url(../images/background-studio-mobile@2x.jpg);
+    }
+}
+
+@media (min-width: 480px) {
+    .order{
+        &__title{
+            width: 360px;
+        }
     }
 }
 

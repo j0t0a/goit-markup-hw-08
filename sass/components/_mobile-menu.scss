@@ -11,7 +11,7 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background: var(--clear-white);
     z-index: 99999;
-    padding: 48px 40px;
+    padding: min(10vw, 48px) min(8vw, 40px);
 
     display: flex;
     flex-direction: column;
@@ -35,7 +35,7 @@
     }
     &__contact-link{
         font-weight: 500;
-        font-size: 34px;
+        font-size: min(34px, 9vw);
         line-height: 40px;
         letter-spacing: 0.02em;
         color: var(--blue-color);
@@ -48,7 +48,7 @@
         }
     }
     .phone-link-wrapper{
-        margin-bottom: 32px;
+        margin-bottom: 6vw;
     }
     &__socials{
         margin-top: 60px;
@@ -56,6 +56,7 @@
     &__socials-list{
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
     }
     &__social-wrapper{
         display: flex;
